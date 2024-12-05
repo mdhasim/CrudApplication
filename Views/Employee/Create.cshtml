@@ -1,13 +1,9 @@
 ﻿@model CrudApplication.Models.Employee
-
 @{
-    ViewData["Title"] = "Add";
+    ViewData["Title"] = Model.EmpId == 0? "Add" : "Update";
 }
 
-<h1>@(Model.EmpId == 0 ? "Add" : "Update")</h1>
-
-
-<h4>Employee</h4>
+<h4>@(Model.EmpId == 0 ? "Add" : "Update") Employee</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">

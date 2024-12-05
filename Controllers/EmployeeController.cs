@@ -50,7 +50,7 @@ namespace CrudApplication.Controllers
                     }
                     else
                     {
-                        _Db.Entry(obj).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                        _Db.Entry(obj).State = EntityState.Modified;
                         await _Db.SaveChangesAsync();
                     }                    
                     return RedirectToAction("EmployeeList");

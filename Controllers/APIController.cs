@@ -39,7 +39,11 @@ namespace CrudApplication.Controllers
                 return NotFound();
             }
 
-            return employee;
+            return new JsonResult(new { 
+                data = employee,
+                message = "Employee retrieved successfully",
+                status = 200 
+            });
         }
 
         // PUT: api/API/5
