@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CrudApplication.Data;
 using CrudApplication.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CrudApplication.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class APIController : ControllerBase

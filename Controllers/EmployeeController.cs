@@ -1,5 +1,6 @@
 ﻿using CrudApplication.Data;
 using CrudApplication.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,7 @@ namespace CrudApplication.Controllers
         {
             _Db = Db;
         }
+        [AllowAnonymous]
         public IActionResult EmployeeList()
         {
             try
@@ -25,6 +27,7 @@ namespace CrudApplication.Controllers
             }
         }
 
+        [AllowAnonymous]
         public IActionResult Create(int? id) {
             if (id.HasValue)
             {
@@ -39,6 +42,7 @@ namespace CrudApplication.Controllers
             
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> AddEmployee(Employee obj) {
             try
@@ -64,6 +68,7 @@ namespace CrudApplication.Controllers
             }
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Delete(int id)
         {
             try

@@ -11,5 +11,6 @@ namespace CrudApplication.Data
         }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Login> Users { get; set; }
     }
 }

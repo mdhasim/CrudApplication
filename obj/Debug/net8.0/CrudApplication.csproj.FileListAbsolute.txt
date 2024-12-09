@@ -262,3 +262,4 @@ C:\Users\User\source\repos\CrudApplication\CrudApplication\bin\Debug\net8.0\runt
 C:\Users\User\source\repos\CrudApplication\CrudApplication\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\User\source\repos\CrudApplication\CrudApplication\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\User\source\repos\CrudApplication\CrudApplication\obj\Debug\net8.0\CrudApplication.sourcelink.json
+C:\Users\User\source\repos\CrudApplication\CrudApplication\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

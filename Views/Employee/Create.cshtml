@@ -11,31 +11,31 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <input type="hidden" asp-for="EmpId" />
-                <label asp-for="FirstName" class="control-label"></label>
+                <label asp-for="FirstName" class="control-label">First Name</label>
                 <input asp-for="FirstName" class="form-control" />
                 <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label asp-for="LastName" class="control-label">Last Name</label>
                 <input asp-for="LastName" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="form-group pt-2">
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PhoneNo" class="control-label"></label>
+            <div class="form-group pt-2">
+                <label asp-for="PhoneNo" class="control-label">Phone No.</label>
                 <input asp-for="PhoneNo" class="form-control" />
                 <span asp-validation-for="PhoneNo" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group pt-2">
                 <label asp-for="Salary" class="control-label"></label>
                 <input asp-for="Salary" class="form-control" />
                 <span asp-validation-for="Salary" class="text-danger"></span>
             </div>
-            <div class="form-group mt-2">
-                <input type="submit" value="@(Model.EmpId == 0 ? "Add" : "Update")" class="btn btn-primary" />
+            <div class="form-group pt-2">
+                <input type="submit" value="@(Model.EmpId == 0 ? "Save" : "Update")" class="btn btn-primary" />
                 <a asp-action="EmployeeList" class="btn btn-success">Employee List</a>
             </div>
         </form>

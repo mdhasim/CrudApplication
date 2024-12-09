@@ -107,5 +107,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrudApplication.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "CrudApplication.Models.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
